@@ -43,14 +43,15 @@
                     <li><a class="header-contacts-link link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
-            <button type="button" class="btn-menu-open"> <svg class="header-icon" width="32" height="22">
+            <button type="button" class="btn-menu-open" data-menu-open> <svg class="header-icon" width="32" height="22">
                     <use href="./images/icons.svg#icon-menu-hamburger"></use>
                 </svg>
             </button>
         </div>
-        <div class="mob-menu-all">
+        <div class="mob-menu-all is-hidden" data-menu>
             <div>
-                <button type="button" class="btn-menu-close"> <svg class="header-icon-close" width="8" height="8">
+                <button type="button" class="btn-menu-close" data-menu-close> <svg class="header-icon-close" width="8"
+                        height="8">
                         <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
                     </svg>
                 </button>
@@ -66,45 +67,47 @@
                     </li>
                 </ul>
             </div>
-            <ul class="mob-contacts-list list">
-                <li><a class="mob-contacts-link-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-                <li><a class="mob-contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-            </ul>
-            <ul class="mob-list-socials list">
-                <li class="mob-list-socials-contacts">
-                    <a class="mob-list-socials-link link" href="" aria-label="Instagram" target="_blank"
-                        rel="noopener no-referrer">
-                        <svg class="mob-guide-socials-icons" width="40" height="40">
-                            <use href="./images/icons.svg#icon-instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="mob-list-socials-contacts">
-                    <a class="mob-list-socials-link link" href="" aria-label="Twitter" target="_blank"
-                        rel="noopener no-referrer">
-                        <svg class="mob-guide-socials-icons" width="40" height="40">
-                            <use href="./images/icons.svg#icon-twitter"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="mob-list-socials-contacts">
-                    <a class="mob-list-socials-link link" href="" aria-label="Facebook" target="_blank"
-                        rel="noopener no-referrer">
-                        <svg class="mob-guide-socials-icons" width="40" height="40">
-                            <use href="./images/icons.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="mob-list-socials-contacts">
-                    <a class="mob-list-socials-link link" href="" aria-label="Linkedin" target="_blank"
-                        rel="noopener no-referrer">
-                        <svg class="mob-guide-socials-icons" width="40" height="40">
-                            <use href="./images/icons.svg#icon-linkedin"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+            <div>
+                <ul class="mob-contacts-list list">
+                    <li><a class="mob-contacts-link-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                    <li><a class="mob-contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mob-list-socials list">
+                    <li class="mob-list-socials-contacts">
+                        <a class="mob-list-socials-link link" href="" aria-label="Instagram" target="_blank"
+                            rel="noopener no-referrer">
+                            <svg class="mob-guide-socials-icons" width="24" height="24">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-list-socials-contacts">
+                        <a class="mob-list-socials-link link" href="" aria-label="Twitter" target="_blank"
+                            rel="noopener no-referrer">
+                            <svg class="mob-guide-socials-icons" width="24" height="24">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-list-socials-contacts">
+                        <a class="mob-list-socials-link link" href="" aria-label="Facebook" target="_blank"
+                            rel="noopener no-referrer">
+                            <svg class="mob-guide-socials-icons" width="24" height="24">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-list-socials-contacts">
+                        <a class="mob-list-socials-link link" href="" aria-label="Linkedin" target="_blank"
+                            rel="noopener no-referrer">
+                            <svg class="mob-guide-socials-icons" width="24" height="24">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -492,7 +495,7 @@
             </div>
         </div>
     </footer>
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
                 <svg class="modal-btn-icon" width="8" height="8">
@@ -549,7 +552,8 @@
             </form>
         </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

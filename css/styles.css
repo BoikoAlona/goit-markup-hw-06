@@ -28,6 +28,10 @@ body {
     background-color: #FFFFFF;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -165,7 +169,7 @@ body {
     width: 100vw;
     height: 100vh;
     z-index: 2;
-    padding: 24px 40px 40px 40px;
+    padding: 24px 35px 40px 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -211,7 +215,6 @@ body {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin-bottom: 40px;
 }
 
 .mob-contacts-link-tel {
@@ -221,27 +224,30 @@ body {
     line-height: 1.11;
     letter-spacing: 0.02em;
     max-width: 353px;
+    width: 100%;
+    margin-bottom: 40px;
 }
 
 .mob-contacts-list {
     gap: 48px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 48px;
 }
 
 .mob-list-socials {
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 56px;
 }
 
 .mob-list-socials-contacts {
-    width: 100%;
-    height: 100%;
+    width: 40px;
+    height: 40px;
     background-color: #4d5ae5;
     border-radius: 50%;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .mob-guide-socials-icons {

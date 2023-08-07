@@ -17,6 +17,10 @@
         max-width: 768px;
     }
 
+    .btn-menu-open {
+        display: none;
+    }
+
     .header-menu-icon {
         display: none;
     }
