@@ -248,6 +248,7 @@
     .header-contacts-list {
         display: flex;
         gap: 40px;
+        flex-direction: row;
 }
 
     .header-contacts {
