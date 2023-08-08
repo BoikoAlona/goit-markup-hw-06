@@ -111,7 +111,6 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-right: 76px;
 }
 
 .header-menu-link {
@@ -176,10 +175,13 @@ body {
 }
 
 .btn-menu-close {
-    display: block;
-    margin-left: auto;
-    margin-bottom: 32px;
-    margin-right: 24px;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
     background-color: transparent;
     border-width: 1px;
@@ -187,6 +189,15 @@ body {
     width: 24px;
     height: 24px;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-menu-close:hover,
+.btn-menu-close:focus {
+    background-color: #404bbf;
+    border: none;
+    fill: #ffffff;
 }
 
 .mob-menu-link {
@@ -195,18 +206,21 @@ body {
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mob-menu-link:hover,
-.mob-menu-link:focus {
+.mob-menu-link-active {
     color: #404BBF;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
 }
 
 .mob-menu {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    margin-top: 80px;
 }
 
 .mob-contacts-link {
@@ -259,7 +273,7 @@ body {
     max-width: 428px;
     background-color: #2E2F42;
     /* padding: 188px 0; */
-    padding: 112px 54px;
+    padding: 112px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.70),
         rgba(46, 47, 66, 0.70)
@@ -289,7 +303,7 @@ body {
     /* line-height: 1.07; */
     letter-spacing: 0.02em;
     /* max-width: 496px; */
-    min-width: 320px;
+    max-width: 320px;
     margin: 0 auto;
     /* margin-bottom: 48px; */
     margin-bottom: 72px;
@@ -409,7 +423,7 @@ body {
 .team {
     background-color: #F4F4FD;
     /* padding: 120px 0; */
-    padding: 96px 67px 96px 67px;
+    padding: 96px 0;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
@@ -426,6 +440,8 @@ body {
 
 .team-list {
     display:flex;
+    justify-content: center;
+    text-align: center;
     flex-wrap: wrap;
     /* gap: 24px; */
     gap: 72px;
